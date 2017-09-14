@@ -95,3 +95,4 @@ android{
  * ./gradlew clean
  * ./gradlew tasks [--all]
  * ./gradlew androidDependencies
+ * ./gradlew test
