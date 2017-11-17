@@ -75,24 +75,5 @@ android{
         }
 }
 ```
-19.While string and layout resources in flavors and build types override the corresponding values in the *main* source set, Java classes are different.If you code in the *main* source set refers to a particular class, then each flavor and build type can have its own implementation of that class as long as you don't have on in *main*.Any class referenced by an element in the *main* source set must exist in each flavor.
-
-
-
-
-
-### Comands
-1. You can run multiple tasks by separating them by spaces
-  * ***./gradlew lint assembleDebug***
-2. You can exclude a task by using the ***-x*** flag
-  * ***./gradlew assembleDebug -x lintDebug***
-3. You can use the ***-P*** argument to set the value of properties.
- * ***./gradlew -Plogin=xxx -Ppassword=xxx assembleDebug*** (login and password are properties)
-
-
-
- * ./gradlew build
- * ./gradlew clean
- * ./gradlew tasks [--all]
- * ./gradlew androidDependencies
- * ./gradlew test
+19.While string and layout resources in flavors and build types override the corresponding values in the *main* source set, Java classes are different.If you code in the *main* source set refers to a particular class, then each flavor and build type can have its own implementation of that class as long as you don't have on in *main*.Any class referenced by an element in the *main* source set must exist in each flavor.  
+20.manifestPlaceholders: 存放在AndroidManifest中定义的变量值
