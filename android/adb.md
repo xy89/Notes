@@ -4,7 +4,7 @@ adb logcat | grep StrictMode
 2. **打印调用堆栈**
 Log.d(TAG, Log.getStackTraceString(new Throwable()));
 3. **截屏**
-screencap /mnt/card/test.png
+adb shell screencap /mnt/card/test.png
 4. **uiautomatorviewer**
 Android/sdk/tools/bin
 5. **top activity**
@@ -19,4 +19,5 @@ adb shell pm revoke com.myapp.mypackagename android.permission.INTERNET
 adb shell dumpsys alarm
 9. **list all info about a application**
 adb shell dumpsys package com.android.chrome
-10.
+10. **record video**
+adb shell screenrecord /sdcard/xxx.mp4
