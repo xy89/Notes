@@ -24,3 +24,5 @@ git cherry-pick a3d6f12f4^..6e5ca1ee5(有^包括左区间，否则不包含)
 * git remote show origin
 * git remote prune origin
 * git update-ref -d (refs/remote/..)
+10. **show relationship between local branch and remote branch**
+* git branch -vv
